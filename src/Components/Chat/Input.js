@@ -19,9 +19,10 @@ const Container = styled.div`
     padding: 0;
     display:flex;
     input{
-        margin:0;
+        margin:auto;
         padding-left:6px;
-        width: 270px;
+        position:absolute;
+        width: 260px;
         height: 36px;
         border-radius: 50px;
         background-color: #ffffff;
@@ -31,7 +32,7 @@ const Container = styled.div`
     .btns{
         display:flex;
         color:#ffffff;
-        right:39px;
+        left:210px;
         position:relative;
     }
 

@@ -15,8 +15,8 @@ export default function onLive() {
             </div>
             <div className="descargas">
                 <h4>Descarga la app</h4>
-                <button className="btn-primary"><i class="fab fa-apple" style={{fontSize:'14px', margin:'5px'}}></i>App Store</button>
-                <button className="btn-primary"><i class="fab fa-google-play" style={{fontSize:'14px', margin:'5px'}}></i>Play Store</button>
+                <button className="btn-primary"><i class="fab fa-apple" style={{fontSize:'14px', marginRight:'5px'}}></i>App Store</button>
+                <button className="btn-primary"><i class="fab fa-google-play" style={{fontSize:'14px', marginRight:'5px'}}></i>Play Store</button>
             </div>
         </OnLive>
     )
@@ -59,6 +59,8 @@ const OnLive = styled.div`
     && .btn-primary{
         width: 134px;
         height: 36px;
+        margin:auto;
+        padding-left:19px;
         border: none;
         border-radius: 50px;
         background-color: #3cd458;

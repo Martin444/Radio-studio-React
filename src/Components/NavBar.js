@@ -34,8 +34,9 @@ width:100%;
   padding-top: 20px;
   margin: 0;
   justify-content: center;
-  height: 60px;
+  height: 90px;
   position: fixed;
+  background: linear-gradient(to top, rgba(52, 58, 64, 0.2), #343a40);
   z-index: 1;
   && h1{
       color: #fff;

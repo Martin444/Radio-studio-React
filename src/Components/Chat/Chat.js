@@ -10,7 +10,7 @@ export default function Chat() {
         <Container>
             <Header/>
             <Sesion/>
-            {/* <Reacts/> */}
+            <Reacts/>
             <Input/>
         </Container>
     )

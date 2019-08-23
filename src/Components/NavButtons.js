@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import {ButtonToolbar, OverlayTrigger, Button, Popover} from 'react-bootstrap'
+import {ButtonToolbar, OverlayTrigger, Popover} from 'react-bootstrap'
 import styled from 'styled-components'
 import Registry from './Registry';
 import Login from './Login';
