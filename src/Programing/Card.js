@@ -47,6 +47,7 @@ const ImgBox = styled.div`
   height: 180px;
   border-radius: 10px;
   background-image:url(${Nov});
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 
   h4{
         margin:auto;

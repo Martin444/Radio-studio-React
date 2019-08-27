@@ -14,13 +14,19 @@ import styled from 'styled-components'
 export default function Reacts() {
     return (
         <Container>
-            <img src={Like} alt="Reaciones"/>
-            <img src={ME} alt="Reaciones"/>
-            <img src={MD} alt="Reaciones"/>
-            <img src={MB} alt="Reaciones"/>
-            <img src={MA} alt="Reaciones"/>
-            <img src={MU} alt="Reaciones"/>
-            <img src={MS} alt="Reaciones"/>
+            <button><img src={Like} alt="Reaciones"/></button>
+            <button><img src={ME} alt="Reaciones"/></button>
+            <button><img src={MD} alt="Reaciones"/></button>
+            <button><img src={MB} alt="Reaciones"/></button>
+            <button><img src={MA} alt="Reaciones"/></button>
+            <button><img src={MU} alt="Reaciones"/></button>
+            <button><img src={MS} alt="Reaciones"/></button>
+            
+            
+            
+            
+            
+            
         </Container>
     )
 }
@@ -29,18 +35,26 @@ const Container = styled.div`
     width:100%;
     height: 35px;
  margin:0;
- padding:0;
- /* position:absolute; */
+ padding:5px;
+ position:relative;
+ display: flex; 
+
+    button{
+        width: 32px;
+        height: 32px;
+        margin-right:5px;
+        margin-bottom: 28px;
+        background:none;
+        border:none;
+    }
 
     img{
         width: 32px;
         height: 32px;
-        margin-right:5px;
-        margin-bottom: 8px;
-        cursor:pointer;
+        bottom: 10px;
+        position: relative;
         :hover{
-            width: 42px;
-            height: 42px;
+            bottom:13px;
             box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
         }
     }

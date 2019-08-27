@@ -5,10 +5,8 @@ import Perfil from '../../Images/perf.jpg'
 export default function Avatar() {
     return (
         <Container>
+                <i class="fas fa-circle"></i>
                 <img src={Perfil} alt="Foto de perfil del usuario"/>
-                <p className="badge">
-                    4
-                </p>
             
         </Container>
     )
@@ -24,14 +22,13 @@ const Container = styled.div`
         border-radius:50px;
     }
 
-    .badge{
-        width: 10px;
-        height: 10px;
+    i{
+        font-size:10px;
         border-radius: 50px;
-        background: #3cd458;
+        color: #3cd458;
         position:relative;
         top:29px;
-        right: 9px;
+        left: 36px;
     }
 
     p{

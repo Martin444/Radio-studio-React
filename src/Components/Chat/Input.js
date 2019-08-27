@@ -27,6 +27,17 @@ const Container = styled.div`
         border-radius: 50px;
         background-color: #ffffff;
         text-align:left;
+
+        /* Prefijos de MOZ */
+        margin:auto;
+        padding-left:-moz- 6px;
+        position:-moz- absolute;
+        width: 260px;
+        height: 36px;
+        border-radius:-moz-  50px;
+        background-color:-moz-  #ffffff;
+        text-align:-moz- left;
+
     }
 
     .btns{

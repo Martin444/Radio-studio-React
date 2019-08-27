@@ -9,6 +9,7 @@ export default function NavBar() {
                 <Content>
                     <DivLogo>
                         <h1>LOGO</h1>
+                        <i class="fas fa-search"></i>
                     </DivLogo>
                     <div className="Nav">
                         <ul>
@@ -95,4 +96,13 @@ margin:auto;
     display: flex;
   justify-content: space-between;
   align-items: center;
+
+    i{
+        margin-left: 40px;
+        margin-bottom: 4px;
+        width: 16px;
+        height: 16px;
+        color: #fff;
+        cursor: pointer;
+    }
 `

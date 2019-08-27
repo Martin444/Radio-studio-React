@@ -14,7 +14,7 @@ export default function DescriptionLive() {
                 <div className="btns">
                     <div className="follow-btns">
                         <button className="btn-primary">Seguir</button>
-                        <button className="btn-secundary">Compartir</button>
+                        <button className="btn-secundary"><i class="fas fa-share"></i>Compartir</button>
                     </div>
                     <div className="share-btn">
                             <span>2M</span>
@@ -71,7 +71,7 @@ const Description = styled.div`
         cursor:pointer;
     }
 
-    && .btn-secundary{
+    .btn-secundary{
         width: 134px;
         height: 36px;
         border-radius: 40px;
@@ -84,6 +84,10 @@ const Description = styled.div`
         letter-spacing: 0.14px;
         color: #ffffff;
         cursor:pointer;
+    }
+
+    .btn-secundary i{
+        margin-right: 5px;
     }
 
 

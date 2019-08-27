@@ -27,6 +27,7 @@ const Publish = styled.div`
         width: 1024px;
         height: 120px;
         border-radius: 5px;
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
         background-image: linear-gradient(to bottom, rgba(123, 101, 255, 0.33), rgba(123, 101, 255, 0.11)), url(${Banner});
         background-size: cover;
     }

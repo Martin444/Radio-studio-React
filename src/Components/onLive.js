@@ -6,7 +6,7 @@ export default function onLive() {
     return (
         <OnLive>
             <div className="streaming">
-            <button type="button" className="stream"><i class="fas fa-circle"></i>Play Live</button>
+            <button type="button" className="stream"><i class="fas fa-circle"></i>On Live</button>
             </div>
             <div className="locutores">
                 <h4>Locutores</h4>
@@ -15,8 +15,8 @@ export default function onLive() {
             </div>
             <div className="descargas">
                 <h4>Descarga la app</h4>
-                <button className="btn-primary"><i class="fab fa-apple" style={{fontSize:'14px', marginRight:'5px'}}></i>App Store</button>
-                <button className="btn-primary"><i class="fab fa-google-play" style={{fontSize:'14px', marginRight:'5px'}}></i>Play Store</button>
+                <button className="btn-primary"><i class="fab fa-apple" style={{fontSize:'14px', marginRight:'5px', marginTop:'4px'}}></i>App Store</button>
+                <button className="btn-primary"><i class="fab fa-google-play" style={{fontSize:'14px', marginRight:'5px',marginTop:'4px' }}></i>Play Store</button>
             </div>
         </OnLive>
     )
@@ -31,18 +31,24 @@ const OnLive = styled.div`
         margin: auto;
         padding: 0;
         display:disabled;
-        width: 101px;
-        height: 28px;
-        border-radius: 60px;
+        width: 108px;
+        height: 36px;
+        border-radius: 10px;
         margin-right: 20px;
         border: none;
         box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.2);
         background-color: #ffffff;
         color: #ff3e3e;
-        font-size: 12px;
+        font-size: 16px;
         font-weight: bold;
         font-style: normal;
         cursor: normal;
+    }
+
+    .stream i{
+        width: 18px;
+        height: 18px;
+        margin-right: 5px;
     }
 
     .streaming{

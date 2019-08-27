@@ -26,7 +26,7 @@ export default function PlayLive() {
 
             <div className="botons">
             <button type="button" className="pod"><i class="fas fa-podcast"></i>Podcasts</button>
-            <button type="button" className="pod"><i class="fas fa-comment"></i>Comentarios</button>
+            <button type="button" className="pod2"><i class="fas fa-comment"></i>Comentarios</button>
             </div>
         </DivPlay>
     )
@@ -60,6 +60,26 @@ const DivPlay = styled.div`
         color:#ffffff;
         font-size: 14px;
   font-weight: bold;
+    }
+
+    .pod i{
+        margin-right:5px;
+    }
+
+    .pod2{
+        width: 154px;
+        height: 36px;
+        background:none;
+        border-radius: 40px;
+        margin-right: 20px;
+        border: solid 1px #ffffff;
+        color:#ffffff;
+        font-size: 14px;
+  font-weight: bold;
+    }
+
+    .pod2 i{
+        margin-right: 5px;
     }
 `
 

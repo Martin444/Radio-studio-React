@@ -11,7 +11,7 @@ export default function Header() {
                 <img src={Perfil} alt="Fotos de los usuarios en el chat"/>
             </div>
             <div className="state">
-                <span>Online</span>
+                <span><i class="fas fa-circle"></i>Online</span>
             </div>
         </Container>
     )
@@ -20,7 +20,11 @@ export default function Header() {
 const Container = styled.div`
     margin: auto;
      display: flex;
-    width:100%
+    width:100%;
+
+    .users{
+        display:flex;
+    }
      img{
         width: 20px;
         height: 20px;
@@ -33,5 +37,17 @@ const Container = styled.div`
          text-align:end;
          padding-left:50%;
      }
+
+     span{
+         display: flex;
+     }
+
+     span i{
+        font-size:10px;
+        border-radius: 50px;
+        color: #3cd458;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
 
 `

@@ -6,7 +6,7 @@ import Carusel from '../Programing/carusel';
 export default function Programación() {
     return (
         <DivPrograming>
-            <div>
+            <div className="ads">
                 <Ads/>
             </div>
         
@@ -25,6 +25,10 @@ const DivPrograming = styled.div`
     width:100%;
     height: 1424px;
     background: #343a40;
+
+    .ads{
+        padding-top: 30px;
+    }
 
     .programing{
         width: 1024px;
