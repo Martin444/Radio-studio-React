@@ -5,9 +5,10 @@ export default function Login(props) {
     return (
         <DivLogin>
             <input type="text"  placeholder="Usuario o Email"/>
+            
             <input type="text"  placeholder="Contraseña"/>
             <button onClick={props.login} className="btn-primary">iniciar sesión</button>
-            <button className="btn-social">conectar</button>
+            <button className="btn-social"><i class="fab fa-facebook-f" style={{fontSize:'14px', marginRight:'5px', marginTop:'4px'}}></i>conectar</button>
         </DivLogin>
     )
 }
@@ -20,6 +21,7 @@ const DivLogin = styled.div`
         text-align: left;
         margin: 5px;
         padding: 5px;
+        padding-left: 20px;
         border: none;
         border-radius: 50px;
         background: #242a30;

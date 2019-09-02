@@ -223,9 +223,12 @@ const Articulo = styled.div`
         margin:0;
         display:flex;
         text-align:left;
+        
     }
 
     .etiqueta{
+        position: relative;
+        right: 330px;
         width: wrap;
         height: 32px;
         margin:0;

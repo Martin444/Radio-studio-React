@@ -13,7 +13,7 @@ export default function Registry() {
             <input type="text"  placeholder="Sexo"/>
             <input type="text"  placeholder="País"/>
             <button className="btn-primary">Registrarme</button>
-            <button className="btn-social">Registrar con Facebook</button>
+            <button className="btn-social"><i class="fab fa-facebook-f" style={{fontSize:'14px', marginRight:'5px', marginTop:'4px'}}></i>Registrar con Facebook</button>
         </Register>
     )
 }
@@ -27,6 +27,7 @@ const Register = styled.div`
         text-align: left;
         margin: 5px;
         padding: 5px;
+        padding-left: 20px;
         border: none;
         border-radius: 50px;
         background: #242a30;

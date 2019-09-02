@@ -65,7 +65,32 @@ export default function Controler() {
                 <img src={MU} alt="Reaciones"/>
                 <img src={MS} alt="Reaciones"/>
 
-                <button className="share"><i class="fas fa-share"></i>Compartir</button>
+                <ButtonToolbar>
+                    <OverlayTrigger
+                    style={{background:'#2e373e'}}
+                    trigger="click"
+                    key='share'
+                    placement='top'
+                    overlay={
+                        <Popover id={`popover-positioned-top`} style={{background:'#343a40'}}>
+                        {/* <Popover.Title as="h3" style={{background:'#343a40'}}>{`Popover top`}</Popover.Title> */}
+                        <Popover.Content style={{background:'#343a40', position:"relative", bottom:'50px'}}>
+                        <div className="share-btns">
+                            <button style={{backgroundColor:'#3b5999', color:'#fff', border:'none', borderRadius:'50px', marginRight: '4px'}}><i class="fab fa-facebook-f"></i></button>
+                            <button style={{backgroundColor:'#55acee', color:'#fff', border:'none', borderRadius:'50px', marginRight: '4px'}}><i class="fab fa-twitter"></i></button>
+                            <button style={{backgroundColor:'#e4405f', color:'#fff', border:'none', borderRadius:'50px', marginRight: '4px'}}><i class="fab fa-instagram"></i></button>
+                            <button style={{backgroundColor:'#25d366', color:'#fff', border:'none', borderRadius:'50px', marginRight: '4px'}}><i class="fab fa-whatsapp"></i></button>
+                            <button style={{backgroundColor:'#757575', color:'#fff', border:'none', borderRadius:'50px', marginRight: '4px'}}><i class="fas fa-link"></i></button>
+                        </div>
+                        </Popover.Content>
+                        </Popover>
+                    }
+                    >
+                        <button className="share"><i class="fas fa-share"></i>Compartir</button>
+                    </OverlayTrigger>
+                </ButtonToolbar>
+
+                
 
         </Conteiner>
     )
@@ -80,6 +105,22 @@ const Conteiner = styled.div`
     display: block;
     
 
+    
+   .facebook{
+        background-color: #3b5999;
+    }
+
+    .messenger{
+        background-color: #0084ff;
+    }
+
+    .whatsapp{
+        background-color: #25d366;
+    }
+
+    .twitter{
+        background-color: #55acee;
+    }
 
     .prev{
         width: 32px;
@@ -156,9 +197,10 @@ img{
     bottom:78px;
     position: relative;
     cursor:pointer;
+    transition-duration: all .3s;
     :hover{
-        width: 34px;
-        height: 34px;
+        transition-duration: all .3s;
+        bottom:85px;
         box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
     }
 }

@@ -46,13 +46,9 @@ const DivCard = styled.div`
         color:#fff;
     }
 
-    .date h1 {
-        text-align:left;
-    }
-
-    span {
-        margin:0;
-        padding:0;
+    .date span {
+        position: relative;
+        right: 80px;
         text-align:left;
     }
 
@@ -91,7 +87,6 @@ const DivCard = styled.div`
     img{
         width: 60px;
         height: 50px;
-        padding:0;
         margin: 20px;
     }
 `

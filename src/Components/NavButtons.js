@@ -30,7 +30,7 @@ export default function NavButtons() {
                     key='register'
                     placement='bottom'
                     overlay={
-                        <Popover id={`popover-positioned-top`} style={{background:'#343a40'}}>
+                        <Popover id={`popover-positioned-top`} style={{background:'#343a40', border:'none', boxShadow:'0 0 30px 0 rgba(0, 0, 0, 0.3)'}}>
                         {/* <Popover.Title as="h3" style={{background:'#343a40'}}>{`Popover top`}</Popover.Title> */}
                         <Popover.Content style={{background:'#343a40'}}>
                             <Registry/>
@@ -50,7 +50,7 @@ export default function NavButtons() {
                     key='register'
                     placement='bottom'
                     overlay={
-                        <Popover id={`popover-positioned-top`} style={{background:'#343a40'}}>
+                        <Popover id={`popover-positioned-top`} style={{background:'#343a40', border:'none', boxShadow:'0 0 30px 0 rgba(0, 0, 0, 0.3)'}}>
                         {/* <Popover.Title as="h3" style={{background:'#343a40'}}>{`Popover top`}</Popover.Title> */}
                         <Popover.Content style={{background:'#343a40'}}>
                             <Login login={setUser}/>

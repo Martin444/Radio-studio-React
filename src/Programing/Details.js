@@ -37,8 +37,8 @@ export default function Details() {
                         
                     </div>
                     <div className="btns">
-                        <button className="btn-share"><i class="far fa-heart"></i>Favorito</button>
-                        <button className="btn-share"><i class="fas fa-share"></i>Compartir</button>
+                        <button className="btn-share"><i class="far fa-heart" style={{ marginRight:'5px', marginTop:'4px'}}></i>Favorito</button>
+                        <button className="btn-share"><i class="fas fa-share" style={{ marginRight:'5px', marginTop:'4px'}}></i>Compartir</button>
                     </div>
                 </div>
                 <Podcast/>
@@ -87,8 +87,8 @@ const Container = styled.div`
         display: flex;
     }
 
-    .transmition-date h4{
-        width: 290px;
+    .transmition-date p{
+        width: 400px;
     }
 
     && img {

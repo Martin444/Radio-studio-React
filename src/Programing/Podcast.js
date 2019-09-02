@@ -262,18 +262,17 @@ export default function Podcast() {
         </Slider>
         </div>
         <br/>
-        <div>
+        <div className="reprod">
             <h4>Beneficios de ser terco</h4>
             <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.</p>
-            <br/>
-            <p className="reprod">1.200.000 Reproducciones</p>
+            <span>1.200.000 Reproducciones</span>
         </div>
 
         <div className="actions">
             <p>Duración 10:20 min | Peso: 20 MB |</p>
-            <button type="button" className="primary"><i class="fas fa-cloud-download-alt">Descargar</i></button>
-            <button type="button" className="favorito"><i class="far fa-heart"></i>Favorito</button>
-            <button type="button" className="favorito"><i class="fas fa-share"></i>Compartir</button>
+            <button type="button" className="primary"><i class="fas fa-cloud-download-alt" style={{ marginRight:'5px'}}>Descargar</i></button>
+            <button type="button" className="favorito"><i class="far fa-heart" style={{ marginRight:'5px'}}></i>Favorito</button>
+            <button type="button" className="favorito"><i class="fas fa-share" style={{ marginRight:'5px'}}></i>Compartir</button>
         </div>
         
         </div>
@@ -288,6 +287,18 @@ const Container = styled.div`
     width: 100%;
     height:709px;;
     background-color: #2f343a;
+
+    .reprod span {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.24px;
+    color: #3cd458;
+    position: relative;
+    right: 355px;
+  }
 
     .Podcast{
         margin:auto;
@@ -346,21 +357,23 @@ const Container = styled.div`
 
     .actions{
         display: flex;
+        padding-top: 10px;
     }
 
     .actions p{
+        font-size: 12px;
         margin: 5px;
     }
 
     .primary{
-        width: 99px;
+        width: 103px;
         height: 28px;
         border: none;
         margin-right: 9px;
         border-radius: 50px;
         background-color: #3cd458;
-        font-size: 14px;
-        font-weight: bold;
+        font-size: 12px;
+        font-weight: normal;
         letter-spacing: 0.14px;
         color: #ffffff;
         cursor: pointer;
@@ -385,6 +398,7 @@ const ImgItem = styled.div`
   height: 200px;
   border-radius: 10px;
   background-image: linear-gradient(to bottom, rgba(52, 58, 64, 0.2), #343a40), url(${Nov});
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
 
 
   .progressBar{
@@ -399,6 +413,8 @@ const ImgItem = styled.div`
   .Item{
       padding:20px;
   }
+
+ 
 `
 
 const ButtonPlay = styled.button`
