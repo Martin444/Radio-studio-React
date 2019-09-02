@@ -16,7 +16,7 @@ const PlayFooter = styled.footer`
     width: 100%;
     height: 100px;
     background: #343a40;
-    border-top: 1px solid #3cd458;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
     position: fixed;
     bottom: 0%;
     color: #fff;
