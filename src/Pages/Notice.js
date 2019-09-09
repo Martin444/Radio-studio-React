@@ -52,9 +52,6 @@ export default function Notice() {
                     </div>
                 </Articulo>
                 <div className="relations">
-                    {/* <div className="container-relations">
-
-                    </div> */}
                     <h5>Relacionados</h5>
                     <Cards/>
                 </div>
@@ -190,7 +187,7 @@ const Banner = styled.div`
 
 const Articulo = styled.div`
     margin:0;
-    padding:100px;
+    padding-top:100px;
     width:100%;
     height: 696px;
     background-color: #343a40;
@@ -232,7 +229,7 @@ const Articulo = styled.div`
         width: wrap;
         height: 32px;
         margin:0;
-        /* padding:auto; */
+        padding:auto;
         border:none;
         color: #fff;
         margin-right: 20px;
@@ -275,13 +272,13 @@ const Articulo = styled.div`
     }
 
     .share-btns{
-        /* width:1024px; */
-        position:relative;
-        bottom: -10px;
-        left: 400px;
+        width:224px;
+        position:absolute;
+        top: 1000px;
+        left: 1000px;
     }
 
-    h5{
+   .share-btns h5{
         font-size: 18px;
   font-weight: bold;
   font-style: normal;
